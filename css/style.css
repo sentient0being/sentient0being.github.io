@@ -608,7 +608,7 @@ body h4 {
   }
 }
 .max-width {
-  max-width: 39rem;
+  max-width: 48rem;
 }
 @media (max-width: 480px) {
   .px3 {
@@ -651,11 +651,11 @@ body h4 {
   display: inline-block;
   float: left;
   margin-right: 20px;
-  width: 0px;
-  height: 0px;
+  width: 50px;
+  height: 50px;
   border-radius: 5px;
   filter: grayscale(100%);
-  background-size: 0px 0px;
+  background-size: 50px 50px;
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
 }
@@ -710,7 +710,7 @@ body h4 {
   #header #title {
     display: table;
     margin-right: 5rem;
-    min-height: 0px;
+    min-height: 50px;
   }
   #header #title h1 {
     display: table-cell;
@@ -734,7 +734,7 @@ body h4 {
   }
   #header #nav li:not(:first-child) {
     padding-top: 1rem;
-    padding-left: 20px;
+    padding-left: 70px;
     font-size: 1rem;
   }
 }
@@ -1590,67 +1590,69 @@ article .content .caption {
   content: ")";
 }
 .highlight {
-  background: #474949;
-  color: #d1d9e1;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #b1e7e7;
+  background: #282c34;
 }
-.highlight .code .comment,
-.highlight .code .quote {
+.highlight .comment,
+.highlight .quote {
   color: #969896;
   font-style: italic;
 }
-.highlight .code .keyword,
-.highlight .code .selector-tag,
-.highlight .code .literal,
-.highlight .code .type,
-.highlight .code .addition {
-  color: #c9c;
+.highlight .doctag,
+.highlight .keyword,
+.highlight .formula {
+  color: #c678dd;
 }
-.highlight .code .number,
-.highlight .code .selector-attr,
-.highlight .code .selector-pseudo {
-  color: #f99157;
+.highlight .section,
+.highlight .name,
+.highlight .selector-tag,
+.highlight .deletion,
+.highlight .subst {
+  color: #e06c75;
 }
-.highlight .code .string,
-.highlight .code .doctag,
-.highlight .code .regexp {
-  color: #8abeb7;
+.highlight .literal {
+  color: #56b6c2;
 }
-.highlight .code .title,
-.highlight .code .name,
-.highlight .code .section,
-.highlight .code .built_in {
-  color: #b5bd68;
+.highlight .string,
+.highlight .regexp,
+.highlight .addition,
+.highlight .attribute,
+.highlight .meta-string {
+  color: #98c379;
 }
-.highlight .code .variable,
-.highlight .code .template-variable,
-.highlight .code .selector-id,
-.highlight .code .class .title {
-  color: #fc6;
+.highlight .built_in,
+.highlight .class .title {
+  color: #e6c07b;
 }
-.highlight .code .section,
-.highlight .code .name,
-.highlight .code .strong {
+.highlight .attr,
+.highlight .variable,
+.highlight .template-variable,
+.highlight .type,
+.highlight .selector-class,
+.highlight .selector-attr,
+.highlight .selector-pseudo,
+.highlight .number {
+  color: #d19a66;
+}
+.highlight .symbol,
+.highlight .bullet,
+.highlight .link,
+.highlight .meta,
+.highlight .selector-id,
+.highlight .title {
+  color: #969896;
+}
+.highlight .emphasis {
+  font-style: italic;
+}
+.highlight .strong {
   font-weight: bold;
 }
-.highlight .code .symbol,
-.highlight .code .bullet,
-.highlight .code .subst,
-.highlight .code .meta,
-.highlight .code .link {
-  color: #f99157;
-}
-.highlight .code .deletion {
-  color: #dc322f;
-}
-.highlight .code .formula {
-  background: #eee8d5;
-}
-.highlight .code .attr,
-.highlight .code .attribute {
-  color: #81a2be;
-}
-.highlight .code .emphasis {
-  font-style: italic;
+.highlight .link {
+  text-decoration: underline;
 }
 pre {
   overflow-x: auto;
